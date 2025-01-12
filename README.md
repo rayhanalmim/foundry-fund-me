@@ -13,7 +13,7 @@ $ forge test -vvvv --match-test testPriceVersionInAccurate
 ### Test a specific function with fork
  - make sure it's only done when i will be nessesary because using fork url can increase our rpc provider acount bill.
 ```shell
-$ forge test -vvvv --match-test testPriceVersionInAccurate
+$ forge test -vvvv --match-test testPriceVersionInAccurate --fork-url $SEPOLIA_RPC
 ```
 
 
