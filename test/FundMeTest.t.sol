@@ -34,6 +34,7 @@ contract FundMeTest is Test{
     }
 
     function testFundSuccessWithEnoughETH() public {
+        
         vm.prank(USER);
         fundMe.fund{value: SEND_VALUE}();
         uint256 amountFunded = fundMe.getAddressToAmountFunded(USER);
