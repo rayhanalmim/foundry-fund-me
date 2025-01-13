@@ -23,4 +23,32 @@ $ forge coverage --fork-url $SEPOLIA_RPC
 
 ```
 
+### calculate gas of a indivitual fucntion 
+```shell
+$ forge snapshot --match-test testPriceVersionInAccurate
+
+```
+### check storage of an contract
+```shell
+$ forge inspect FundMe storageLayout
+
+```
+### check storage each slot details using hash and etherscan
+- we have to deploy it first then check with the deployment url 
+```shell
+$ cast storage 0x............contractDeployAddress 
+
+```
+### install devops package
+- we have to deploy it first then check with the deployment url 
+```shell
+$ forge install Cyfrin/foundry-devops --no-commit
+
+```
+### run a script
+```shell
+$ forge script script/example.sol:contractName --rpc-url ... --private-key ...
+
+```
+
 
